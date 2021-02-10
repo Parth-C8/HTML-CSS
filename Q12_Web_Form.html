@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Bug Report Form </title>
+
+<style type="text/css">     
+ 
+ .main-table{
+ border-radius: 8px;
+ width:30%;
+ }
+ 
+.bug{
+padding:20px;
+padding-left:40px;
+background-color:LightGray;
+color:#FFFFFF;
+font-size:25px;
+}
+ 
+.snd{
+padding:15px;
+background-color:#AFEEEE;
+}
+ 
+.sbn{
+background-color:#00e68e;
+text-align:center;
+padding:7px;
+float:right;
+color:#FFFFFF;
+border-radius: 7px;
+}
+ 
+ 
+select {
+width:330px;
+height:30px;
+color:#FFFFFF;
+border-radius: 7px;
+background-color:#00e68e;
+}
+
+.frmtable{
+padding:10px;
+margin-left:28px;
+}
+
+.headcol{
+width:700px;
+font-size:25px;
+}
+.headtable{
+width:70%;
+color: #00e68e;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+<center><table class="headtable">
+<tr>
+
+<td class="headcol"> TO THE NEW</td>
+<td>Home</td>
+<td>Quick Help</td>
+
+</tr>
+</table></center><br><br>
+</div>
+
+<center><table class="main-table" border="3">
+<tr><td class="bug">Bug Report</td></tr>
+
+<tr>
+<td>
+
+<form>
+		<table class="frmtable">
+		<tr><td colspan=2>Title:*</td></tr>
+		<tr><td colspan=2><input type="text" id="title" name="title" size="42" required></td></tr>
+		<tr><td colspan=2>Description:*</td></tr>
+		<tr><td colspan=2><textarea id="desc" name="desc" rows="3" cols="44"></textarea> </td></tr>
+		<tr><td colspan=2>Operating System:</td></tr>
+		<tr><td colspan=2>
+		<select name="OS" id="OS">
+			<option value="window">WindowsXP</option>
+			<option value="mac">MAC</option>
+			<option value="linux">Linux</option>
+		</select>
+		</td></tr>
+		<tr><td colspan=2>Product:*</td></tr>
+		<tr><td colspan=2>
+		<select name="product" id="product">
+			<option value="Formoid">Formoid</option>
+			<option value="jotForm">jotForm</option>
+			<option value="pForm">pForm</option>
+		</select>
+		</td></tr>
+		<tr><td colspan=2>Version:*</td></tr>
+		<tr><td colspan=2><input type="text" id="version" size="5" name="version" required></td></tr>
+		<tr><td colspan=2>License:</td></tr>
+		
+		<tr>
+		<td><input type="radio" id="Rfree" name="Rfree"> Free</td>
+		<td><input type="radio" id="Rbus" name="Rbus"> Business</td>
+		</tr>
+		
+		<tr><td colspan=2>Severity:</td></tr>
+		<tr><td colspan=2>
+		<select name="Severity" id="severity">
+			<option value="Critical">Critical</option>
+			<option value="moderate">Moderate</option>
+			<option value="Light">Light</option>
+		</select>
+		</td></tr>
+		<tr><td colspan=2>Attachments:</td></tr>	
+		<tr>
+		<td><input type="text" id="file" name="file" placeholder="No Files Selected" size="27"></td>
+		<td><input type="button" value="Choose File" id="myfile" name="myfile"></td>
+		</tr>
+	
+		</table>		
+	</form>	
+
+
+
+
+
+</td>
+</tr>
+<tr><td class="snd"><input type="button" value="Send" id="send" name="snd" class="sbn"></td></tr>
+</table></center>
+
+
+
+
+</body>
+</html>
